@@ -109,6 +109,10 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+# Custom envs
+server_venv/
+client_sync_venv/
+client_async_venv/
 
 # Spyder project settings
 .spyderproject
@@ -130,3 +134,6 @@ dmypy.json
 
 # PyCharm IDE-folder
 .idea/
+
+# mac OS filesystem
+.DS_Store

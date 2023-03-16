@@ -137,3 +137,8 @@ dmypy.json
 
 # mac OS filesystem
 .DS_Store
+
+logging.ini
+server.py
+client_sync.py
+client_async.py

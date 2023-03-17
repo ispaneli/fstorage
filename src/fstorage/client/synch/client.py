@@ -5,7 +5,7 @@ from uuid import UUID
 
 import requests
 
-from src.fstorage.client.base_client import BaseFStorageClient
+from ..base_client import BaseFStorageClient
 
 
 class SyncClient(BaseFStorageClient):

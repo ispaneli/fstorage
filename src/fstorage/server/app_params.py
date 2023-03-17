@@ -35,7 +35,7 @@ class AppParams:
     """
     Dataclass with application configuration parameters.
     """
-    _storage_path: Path = Path(__file__).parents[3] / ".fstorage" / "storage"
+    _storage_path: Path = NotImplemented
 
     db_async_url: str = NotImplemented
     db_echo: bool = True
@@ -48,7 +48,7 @@ class AppParams:
     reload: bool = False
     workers_num: int = 1
 
-    _log_config_path: str = str(Path(__file__).parent / "base_logging.ini")
+    _log_config_path: str = NotImplemented
 
     @property
     def storage_path(self) -> Path:

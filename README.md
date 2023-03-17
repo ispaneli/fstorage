@@ -112,7 +112,7 @@ from fstorage.server import storage_run
 if __name__ == '__main__':
     storage_run(
         storage_path=os.getenv('STORAGE_PATH'),
-        log_cofig_path="logging.ini",
+        log_config_path="logging.ini",
         
         db_async_url=os.getenv('POSTGRESQL_URL'),
         db_echo=True,

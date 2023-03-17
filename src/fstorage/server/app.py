@@ -2,8 +2,8 @@ import uvicorn
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from .storage import STORAGE_ROUTER
 from .app_params import APP_PARAMS
+from .storage import STORAGE_ROUTER
 
 
 FSTORAGE_APP = FastAPI(title="FStorage service")
@@ -40,7 +40,7 @@ def storage_run(**kwargs) -> None:
         setattr(APP_PARAMS, param_name, param_value)
 
     uvicorn.run(
-        f'src.fstorage.server.app:FSTORAGE_APP',
+        'fstorage.server.app:FSTORAGE_APP',
         host=APP_PARAMS.host,
         port=APP_PARAMS.port,
         log_config=APP_PARAMS.log_config_path,

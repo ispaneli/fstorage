@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://pypi.org/project/fstorage">
-    <img src="docs/img/logo.png" alt="FStorage">
+    <img src="https://raw.githubusercontent.com/ispaneli/fstorage/master/docs/img/logo.png" alt="FStorage">
   </a>
 </p>
 <p align="center">
@@ -58,9 +58,7 @@ pip install fstorage[async_client]
 
 ---
 
-## How to use
-
-### 1. Server example
+## How to deploy storage
 
 Configure virtual environment variables in terminal:
 
@@ -128,7 +126,7 @@ if __name__ == '__main__':
 
 ---
 
-### 2. Sync client example
+## How to use synchronous client
 
 ```python
 from fstorage.client.synch.client import SyncClient
@@ -162,12 +160,12 @@ if __name__ == '__main__':
 
 ---
 
-### 3. Async client example
+## How to use asynchronous client
 
 ```python
 import asyncio
 
-from src.fstorage.client.asynch.client import AsyncClient
+from fstorage.client.asynch.client import AsyncClient
 
 
 async def example():

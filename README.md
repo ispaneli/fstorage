@@ -34,26 +34,28 @@ It is implemented on the **<a href="https://pypi.org/project/fastapi/" class="ex
 To run the file storage, you need:
 * **<a href="https://www.postgresql.org/" class="external-link" target="_blank">PostgreSQL</a>**
 
+**WARNING**: With the usual installation of `pip install fstorage`, the requirements are not installed (for more info, see [How to install](#how-to-install-with-requirements))!
+
 ---
 
-## How to install
+## How to install with requirements
 
 To deploy the FStorage on the **server**:
 
 ```bash
-pip install fstorage[server]
+pip install 'fstorage[server]'
 ```
 
 To use a **synchronous client**:
 
 ```bash
-pip install fstorage[sync_client]
+pip install 'fstorage[sync_client]'
 ```
 
 To use a **asynchronous client**:
 
 ```bash
-pip install fstorage[async_client]
+pip install 'fstorage[async_client]'
 ```
 
 ---

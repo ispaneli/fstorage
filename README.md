@@ -46,13 +46,13 @@ To deploy the FStorage on the **server**:
 pip install 'fstorage[server]'
 ```
 
-To use a **synchronous client**:
+To use **synchronous client**:
 
 ```bash
 pip install 'fstorage[sync_client]'
 ```
 
-To use a **asynchronous client**:
+To use **asynchronous client**:
 
 ```bash
 pip install 'fstorage[async_client]'
@@ -65,8 +65,8 @@ pip install 'fstorage[async_client]'
 Configure virtual environment variables in terminal:
 
 ```bash
-export POSTGRESQL_URL="postgres://<username>:<password>@<ip_address>:<port>/<database_name>"
-export STORAGE_PATH="/Users/<local_user>/.fstorage/storage"
+export POSTGRESQL_URL="postgresql+asyncpg://<db_username>:<db_password>@<db_host>:<db_port>/<db_name>"
+export STORAGE_PATH="/Users/<local_username>/.fstorage/storage"
 ```
 
 Configure **logging.ini**:
@@ -91,7 +91,7 @@ format=[%(asctime)s.%(msecs)03d] %(levelname)s [%(thread)d] - %(message)s
 [handler_logfile]
 class=handlers.RotatingFileHandler
 level=INFO
-args=('/Users/<local_user>/.fstorage/logfile.log', 'a')
+args=('/Users/<local_username>/.fstorage/logfile.log', 'a')
 formatter=logformatter
 
 [handler_logconsole]
